@@ -21,6 +21,9 @@ the secret with the `WORKFLOWS_TOKEN` name.
 # ...
 # schedule the rest for finishing later:
 
+# Optional: Check out the repo where the templateYmlFile exists to make it available in the next step.
+- uses: actions/checkout@v2
+
 - uses: cardinalby/schedule-job-action@v1
   with:
     ghToken: ${{ secrets.WORKFLOWS_TOKEN }}
